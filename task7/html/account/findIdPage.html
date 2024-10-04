@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type = "text/css" href = "/task7/css/account/accountMenu.css">
+
+</head>
+<body>
+    <h1 id = "title">아이디 찾기</h1>
+    <form action ="/task7/jsp/account/findIdAction.jsp">
+        <!-- <input type = "text" placeholder = 'name' > -->
+        <input type = "text" name ='name' placeholder = ' name' pattern = "[ㄱ-ㅎ가-힣a-zA-Z]*"required>
+
+        <!-- <input type = "text" placeholder = 'birth_day'> -->
+        <input type ="date" min = "1924-01-01" max = "2023-12-31" name ="birthday" >
+
+        <!-- <input type = "text" placeholder = 'phone_number'> -->
+        <input type = "tel" name = 'phone_number' placeholder = 'phone_number (010-0000-0000)' pattern ="(010)-[0-9]{3,4}-[0-9]{4}"required>
+
+        <button id = "Confirm"> 찾기</button>
+
+    </form>
+
+</body>
+</html>

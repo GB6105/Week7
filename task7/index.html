@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" type = "text/css" href = "index.css">
+</head>
+<body>
+    <h1 style = "text-align: center"> 게시판 </h1>
+    <form action ="jsp/account/loginAction.jsp">
+        <input class = "infoContainer" type = "text" id = "id_value" name ="id_value" placeholder="id" required>
+        <input class = "infoContainer" type = "password" id = "pw_value" name = "pw_value" placeholder="pw" required>
+        <button id = "loginConfirm" type = "submit"> 로그인 </button>
+    </form>
+    
+    <div>
+        <!-- 2. id 찾기<br> -->
+        <button class = 'finding' onclick = "location.href='html/account/findIdPage.html'"> id 찾기</button>
+        <!-- 3. pw 찾기<br> -->
+        <button class = 'finding' onclick = "location.href='html/account/findPwPage.html'" >비밀번호 찾기</button>
+        <!-- 4. 계정 만들기<br>-->
+        <button onclick = "location.href = 'html/account/signupPage.html'"> 가입하기 </button>
+    </div>
+
+    <script></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type = "text/css" href = "/task7/css/account/accountMenu.css">
+
+</head>
+<body>
+    <h1 id = "title">비밀번호 찾기</h1>
+    <form action ="/task7/jsp/account/findPwAction.jsp">
+        <input type = "text" name ='name' placeholder = ' name' pattern = "[ㄱ-ㅎ가-힣a-zA-Z]*"required>
+        <input type = "text" name = 'id' placeholder = ' id (more than 2 letters)' minlength = "2" pattern ="[a-zA-Z0-9]*" required>
+        <input type ="date" min = "1924-01-01" max = "2023-12-31" name ="birthday" >
+        <input type = "tel" name = 'phone_number' placeholder = 'phone_number (010-0000-0000)' pattern ="(010)-[0-9]{3,4}-[0-9]{4}"required>
+
+        <button id = "Confirm"> 찾기</button>
+
+    </form>
+
+</body>
+</html>

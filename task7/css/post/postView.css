@@ -1,0 +1,48 @@
+#postBody{
+    display: flex;
+    flex-wrap: wrap;
+    width: 850px;
+    
+}
+
+#postHeader{
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    border: 1px solid black;
+
+}
+
+#category,#viewCount{
+    width: 80px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+#writerId{
+    width: 160px;
+    height: 40px;
+    margin-right: 10px;
+}
+#postTitle{
+    width: 80%;
+    height: 40px;
+}
+
+#content{
+    padding: 10px;
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+}
+
+
+#postOption{
+    margin-top : 10px;
+    width: 850px;
+    height: 40px;
+}
+

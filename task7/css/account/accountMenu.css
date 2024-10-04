@@ -1,0 +1,144 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:0;
+}
+
+#title{
+    width: 100%;
+    text-align: center;
+    flex-shrink: 0;
+}
+form{
+    display:flex;
+    flex-wrap: wrap;
+    width: 400px;
+    margin-top: 30px;
+    padding:0;
+    flex-shrink: 0;
+}
+
+.container{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    border:1px solid grey;
+}
+
+#nameContainer{
+    margin-top: 20px;
+    display:flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+#idContainer{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#emailContainer{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#firstName,#lastName{
+    box-sizing: border-box;
+    width: 47%;
+    height: 100%;
+    padding-left: 10px;
+}
+
+#confirmButton{
+    margin-top: 200px;
+    width: 100%;
+    height: 40px;
+    border:none;
+}
+
+#brithdayContainer{
+    display: flex;
+    justify-content: space-around;
+}
+/* input{
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-left:0;
+    margin-right:0;
+    padding-left: 10px;
+
+
+}
+div{
+    margin-top: 10px;
+    height: 40px;
+}
+
+
+
+#genderContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    border : 1px solid black;
+
+}
+#brithdayContainer{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    border : 1px solid black;
+    
+}
+button{
+    width: 31%;
+    height: 30px;
+    border: 1px solid black;
+}
+
+
+.genderSelect{
+    width: 100px;
+    height: 25px;
+    appearance: none;
+
+}
+
+.genderSelect:checked{
+    border: 0.4em solid blue;
+}
+
+#emailContainer{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#emailInputContainer{
+    width: 70%;
+    margin-top: 0;
+
+}
+
+#domainList{
+    width: 29%;
+    height: 40px;
+}
+
+#confirmButton{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    border-color: rgba(0,0,0,0);
+    background-color: skyblue;
+}
+ */

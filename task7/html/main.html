@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel = "stylesheet" type = "text/css" href = "/task7/css/main.css">
+
+</head>
+<body>
+    <!--header-->
+    <header>
+        <button id = "main_logo" onclick = "location.href ='main_page.html'"></button>
+        <button class = "category" onmouseover="hideAllFoldingBox(),hoverFoldingbox(1)" > About Me</button>
+        <button class = "category" onmouseover="hideAllFoldingBox(),hoverFoldingbox(2)" > Tasks </button>
+        <button class = "category" onmouseover="hideAllFoldingBox(),hoverFoldingbox(3)" > Untitled </button>
+        <button class = "category" onmouseover="hideAllFoldingBox(),hoverFoldingbox(4)" > Untitled </button>
+        <button class = "category" onmouseover="hideAllFoldingBox(),hoverFoldingbox(5)" > Untitled </button>
+        <button class = "category" onmouseover="hideAllFoldingBox(),hoverFoldingbox(6)" onclick = "window.open('/task7/jsp/post/postListUpPage.jsp')" > Posts </button>
+        <button class = "category" onmouseover="hideAllFoldingBox()" onclick = "window.open('/task7/jsp/myPage.jsp')" > MyPage </button>
+        <!-- 로그아웃 으로 기능 수정 -->
+        <button class = "category" onmouseover="hideAllFoldingBox()" onclick = "logoutEvent()" >Logout </button>
+        
+    </header>
+
+    <!-- folding menu-->
+    <!-- Information-->
+    <article id = "foldingBox1" onmouseleave="hideFoldingBox(1)">About me
+        <button class = "myInfo" onclick ="window.open('https://www.notion.so/7fc4dd9af62c47eeae64b37e149e99cb?v=85d07ca6d7784567aea72211e7ccc112')">Notion</button>
+        <button class = "myInfo" onclick ="window.open('https://github.com/GB6105/StageUs/tree/main/Lecture')">github</button>
+        <button class = "myInfo" onclick ="window.open('https://www.stageus.co.kr/')">StageUs</button>
+    </article>
+    <!-- tasks -->
+    <article id = "foldingBox2" onmouseleave="hideFoldingBox(2)">WeeklyTask
+        <button class = "weeklyTask" onmouseover=""
+        onclick = " window.open('week1/견적서.xlsx')"> Week1</button>
+        <button class = "weeklyTask" onmouseover=""
+        onclick="window.open('week2/Youtube.html')"> Week2</button>
+        <button class = "weeklyTask" onmouseover=""
+        onclick="window.open('week3/BaseballGame.html')"> Week3</button>
+        <button class = "weeklyTask" onmouseover=""
+        onclick="window.open('week4/none/PuzzleBuzzle.html')"> Week4</button>
+    </article>
+    <article id = "foldingBox3" onmouseleave="hideFoldingBox(3)">Sorry!</article>
+    <article id = "foldingBox4" onmouseleave="hideFoldingBox(4)">there's not</article>
+    <article id = "foldingBox5" onmouseleave="hideFoldingBox(5)">Enough</article>
+    <article id = "foldingBox6" onmouseleave="hideFoldingBox(6)">
+        <button class = "myInfo" onclick ="window.open('/task7/jsp/post/postListUpPage.jsp')">게시글 목록보기</button>
+        <button class = "myInfo" onclick ="window.open('/task7/html/post/postWriting.html')">게시글 작성하기</button>
+    </article>
+    <article id = "foldingBox7" onmouseleave="hideFoldingBox(7)">Mine more</article>
+    <article id = "foldingBox8" onmouseleave="hideFoldingBox(8)">Minerals</article>
+    
+    <!-- <div>
+        <h1> Welcome to my Space</h1>
+    </div> -->
+    <video autoplay muted loop id = "backgroundVideo" >
+        <source src = "/task7/video/4K Sci-Fi Black Hole.mp4" type = "video/mp4">
+    </video>
+
+    <script>
+        function logoutEvent(){
+            location.href ="/task7/jsp/account/logoutAction.jsp"; // 수정 필요
+        }
+
+        function hideFoldingBox(n){
+            document.getElementById("foldingBox"+n).style.display = "none"
+        }
+
+        function hideAllFoldingBox(){
+            for (var i = 1; i < 9; i++){
+                hideFoldingBox(i);
+            }
+        }
+
+        hideAllFoldingBox();
+
+        function hoverFoldingbox(n){
+            document.getElementById("foldingBox"+n).style.display = "block"
+        }
+    </script>
+</body>
+</html>

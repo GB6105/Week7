@@ -1,0 +1,74 @@
+/* 댓글 CSS*/
+
+p{ 
+    margin: 2px;
+    padding-left: 10px;
+}
+
+ /* 댓글 표시 부분 전체 설정*/
+#comment{
+    width: 850px;
+}
+
+/*개별 댓글이 들어가는 컨테이너*/
+.commentContainer{ 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 5px;
+    width: 100%;
+    height: fit-content;
+    border : 1px solid black;
+    padding: 5px;
+}
+
+ /*댓글 작성자 표시*/
+#loadedCommentWriterId{
+    width: 100%;
+    margin-top:5px;
+    margin-left: 0;
+
+}
+/* 댓글 박스 묶기*/
+#loadedCommentContainer{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    width: 80%;
+
+}
+/* 댓글 내용 표시*/
+#loadedCommentContent{ 
+    display: flex;
+    width: 100%;
+    height: fit-content ;
+    min-height: 20px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    border:none;
+    background-color: rgba(0,0,0,0);
+}
+
+/*댓글 입력창*/
+#commentInputBox{ 
+    width: 98%;
+    height: 100px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+/*댓글 수정 및 삭제 버튼 */
+.commentOption{
+    width: 8%;
+    margin-left: 5px;
+    display:none;
+    border-color: rgba(0,0,0,0);
+}
+
+#submitFixedComment,#cancelFixComment{
+    width: 7%;
+    margin-left: 5px;
+    display:none;
+    border-color: rgba(0,0,0,0);
+
+}

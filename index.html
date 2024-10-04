@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type ="text" id = "id_value">
+    <input type ="password" id = "pw_value">
+    <input type ="button" value = "회원가입" onclick = "signupEvent()">
+    <input type ="button" value = "회원목록페이지" onclick = "changeAccountListEvent()">
+
+    <script>
+        function signupEvent() {
+            var idValue = document.getElementById("id_value").value;
+            var pwValue = document.getElementById("pw_value").value;
+
+            location.href = "signupAction.jsp?id="+idValue+"&pw="+pwValue; //url 쿼리
+        }
+        function changeAccountListEvent(){
+            location.href ="accountListPage.jsp";
+        }
+    </script>
+</body>
+</html>

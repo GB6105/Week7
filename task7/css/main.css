@@ -1,0 +1,89 @@
+header{
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-evenly;
+
+    top : 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background-color: rgba(0,0,0,0.8);
+}
+
+#main_logo{
+
+    width: 40px;
+    height: 30px;
+    border: rgba(0,0,0,0);
+    background-image: url("icon/duck_icon.png");
+    background-color: rgba(0,0,0,0);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:75%;
+
+}
+
+.category{
+    color: rgba(200,200,200,1);
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+    font-size: 12px;
+}
+button{
+    display: block;
+    margin: 10px;
+    font-size: 18px;
+}
+
+article{
+    position: fixed;
+    width: 100%;
+    height: 400px;
+
+    background-color: rgba(0,0,0,0.9);
+
+    padding-top: 40px;
+    padding-left: 30px;
+    top: 40px;
+    font-size: 40px;
+    color: white;
+    z-index: 2;
+}
+.myInfo{
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+    color: white;
+}
+
+
+.weeklyTask{
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+    color: white;
+}
+
+div{
+    width: 100%;
+    height: 60px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: ivory;
+    border: 1px solid black;
+    background-color: rgba(15,13,26);
+    margin-top: 5px;
+
+    
+}
+
+video{
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    text-align: center;
+}
